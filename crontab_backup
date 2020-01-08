@@ -1,0 +1,5 @@
+0 1	* * * 	YouHttpUser	/usr/bin/mysqldump -u YouMayBeRootDBLogin -pYouDBPass --single-transaction --quick --lock-tables=false YouDb | gzip > full-backup-$(date +\%F).sql.gz
+0 2	* * *	YouHttpUser	scp -q /home/YouHttpUser/*.gz backup:bckp/ && rm -Rf  /home/YouHttpUser/*.gz
+0 19	* * *	YouHttpUser	rsync -rcvq /var/www/YouHttpUser/www/files backup: >/home/YouHttpUser/rsync.log 2>/home/YouHttpUser/ersync.log
+
+#TODO replace all "You..."
