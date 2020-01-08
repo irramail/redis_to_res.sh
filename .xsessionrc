@@ -1,0 +1,8 @@
+#!/bin/sh
+autocutsel -fork
+#insert in this place if flag run_tightvncserver and under x11vnc remove this flag
+~/new_resolution.sh
+~/new_resolution.sh 1280 800 VIRTUAL1
+#x11vnc -repeat -clear_keys -shared -forever -display :0 -clip 1348x768+0+0 > /tmp/x11vnc_first.log 2> /tmp/err_x11vnc_first.log &
+#x11vnc -repeat -clear_keys -shared -forever -display :0 -clip 1280x800+1344+0 > /tmp/x11vnc_second.log 2> /tmp/err_x11vnc_second.log &
+#x11vnc -repeat -clear_keys -shared -forever -display :0 -clip 320x140+2624+0
