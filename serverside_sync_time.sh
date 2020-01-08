@@ -5,4 +5,6 @@ do
 #  echo "$id $(date)" >> ~/logs/$(date "+%F")".log"
 done
 
+#TODO in crontab * *	* * *	YouUser	/YouPath/serverside_sync_time.sh
+
 #TODO replace all "you..."."You..."
